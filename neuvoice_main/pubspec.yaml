@@ -1,0 +1,51 @@
+name: neuvoice_main
+description: Privacy-first speech-to-text
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2
+  web: ^1.1.1
+  http: ^1.2.0
+  js: ^0.7.2
+  dio: ^5.4.0
+  web_socket_channel: ^3.0.3
+  path_provider: ^2.1.5            # Compatible with Flutter 3 and record 4.4.18
+  permission_handler: ^12.0.1
+  record: ^6.0.0                   # Matches your request
+  record_linux: ^1.1.1             # Compatible with record 4.4.4
+  hive_flutter: ^1.1.0
+  fftea: ^1.5.0
+  uuid: ^4.2.1
+  wav: ^1.5.0
+  hive: ^2.2.3
+  cupertino_icons: ^1.0.6
+  onnxruntime: ^1.4.1
+  #flutter_onnxruntime: ^1.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.7
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo/logo.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/models/model.onnx
+
+dependency_overrides:
+  js: ^0.6.7
+#  onnxruntime: ^1.4.1
